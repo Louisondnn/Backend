@@ -1,5 +1,9 @@
 trigger CalculMontant on Order (before update) {
-	
-	Order newOrder= trigger.new[0];
-	newOrder.NetAmount__c = newOrder.TotalAmount - newOrder.ShipmentCost__c;
+    
+th.run();
 }
+// deplacer sur throw new Exception()
+
+// et mettre th run 
+// faire un trigger avec un run 
+

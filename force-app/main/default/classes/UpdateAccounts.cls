@@ -1,28 +1,35 @@
-global class UpdateAccounts implements Database.Batchable<sObject>{
-    
-   global Database.QueryLocator start(Database.BatchableContext info){ 
-       //Requeter seulement les comptes qui ont au moins une commande avec le Status 'Ordered'
-       return Database.getQueryLocator('SELECT Id FROM Account');
+global class UpdateAccounts implements Database.Batchable<SObject> {
 
-   }
-    
-   global void execute(Database.BatchableContext info, List<Account> scope){      
-       list<Order> listOrders =  [SELECT Id, TotalAmount, AccountId FROM Order];
-       
-		for(integer i=0; i < scope.size(); i++){
-			Account myAccount = scope[i];
-			myAccount.Chiffre_d_affaire__c = 0;
-           for(integer j=0; j < listOrders.size(); j++){
-               if(listOrders[j].AccountId == myAccount.Id){
-                   myAccount.Chiffre_d_affaire__c = myAccount.Chiffre_d_affaire__c + listOrders[j].TotalAmount;
-               }                   
-           }
-       }
-       
-       update scope;
-   }    
-    
-   global void finish(Database.BatchableContext info){     
-       
-   } 
+    global Database.QueryLocator start(Database.BatchableContext bc) {
+        // Tous les comptes
+        return Database.getQueryLocator([SELECT Id FROM Account]);
+    }
+
+    global void execute(Database.BatchableContext bc, List<SObject> scope) {
+        List<Account> accounts = (List<Account>)scope;
+        Map<Id, Decimal> sumMap = new Map<Id, Decimal>();
+
+        // Récupérer toutes les commandes Ordered pour ces comptes en une seule requête
+        List<Order> orders = [SELECT AccountId, Montant__c FROM Order WHERE AccountId IN :accounts AND Status = 'Ordered'];
+
+        for (Order o : orders) {
+            if (o.Montant__c != null) {
+                sumMap.put(o.AccountId, (sumMap.get(o.AccountId) == null ? 0 : sumMap.get(o.AccountId)) + o.Montant__c);
+            }
+        }
+
+        List<Account> accountsToUpdate = new List<Account>();
+        for (Account acc : accounts) {
+            acc.Chiffre_d_affaire__c = sumMap.containsKey(acc.Id) ? sumMap.get(acc.Id) : 0;
+            accountsToUpdate.add(acc);
+        }
+
+        if (!accountsToUpdate.isEmpty()) {
+            update accountsToUpdate;
+        }
+    }
+
+    global void finish(Database.BatchableContext bc) {
+        // Optionnel : log ou email
+    }
 }

@@ -1,0 +1,120 @@
+{
+    "fileVersion": 0,
+    "serverMaxRevisionCounter": 119,
+    "sourceMembers": {
+        "Profile__Admin": {
+            "memberType": "Profile",
+            "serverRevisionCounter": 118,
+            "lastRetrievedFromServer": null,
+            "isNameObsolete": false
+        },
+        "CustomField__Account.Chiffre_d_affaire__c": {
+            "memberType": "CustomField",
+            "serverRevisionCounter": 34,
+            "lastRetrievedFromServer": 34,
+            "isNameObsolete": false
+        },
+        "CustomField__Order.NetAmount__c": {
+            "memberType": "CustomField",
+            "serverRevisionCounter": 6,
+            "lastRetrievedFromServer": 6,
+            "isNameObsolete": false
+        },
+        "CustomField__Order.ShipmentCost__c": {
+            "memberType": "CustomField",
+            "serverRevisionCounter": 7,
+            "lastRetrievedFromServer": 7,
+            "isNameObsolete": false
+        },
+        "ApexClass__MyTeamOrdersController": {
+            "memberType": "ApexClass",
+            "serverRevisionCounter": 35,
+            "lastRetrievedFromServer": 35,
+            "isNameObsolete": false
+        },
+        "ApexClass__UpdateAccounts": {
+            "memberType": "ApexClass",
+            "serverRevisionCounter": 86,
+            "lastRetrievedFromServer": 86,
+            "isNameObsolete": false
+        },
+        "ApexClass__UpdateAllAccounts": {
+            "memberType": "ApexClass",
+            "serverRevisionCounter": 10,
+            "lastRetrievedFromServer": 10,
+            "isNameObsolete": false
+        },
+        "ApexClass__testUpdateAccountCA": {
+            "memberType": "ApexClass",
+            "serverRevisionCounter": 24,
+            "lastRetrievedFromServer": 11,
+            "isNameObsolete": true
+        },
+        "ApexTrigger__CalculMontant": {
+            "memberType": "ApexTrigger",
+            "serverRevisionCounter": 38,
+            "lastRetrievedFromServer": 38,
+            "isNameObsolete": false
+        },
+        "ApexTrigger__UpdateAccountCA": {
+            "memberType": "ApexTrigger",
+            "serverRevisionCounter": 81,
+            "lastRetrievedFromServer": 81,
+            "isNameObsolete": false
+        },
+        "ApexPage__MyTeamOrders": {
+            "memberType": "ApexPage",
+            "serverRevisionCounter": 14,
+            "lastRetrievedFromServer": 14,
+            "isNameObsolete": false
+        },
+        "CustomField__Order.Montant_c__c": {
+            "memberType": "CustomField",
+            "serverRevisionCounter": 18,
+            "lastRetrievedFromServer": null,
+            "isNameObsolete": true
+        },
+        "Layout__Order-Order Layout": {
+            "memberType": "Layout",
+            "serverRevisionCounter": 21,
+            "lastRetrievedFromServer": null,
+            "isNameObsolete": false
+        },
+        "CustomField__Order.Montant__c": {
+            "memberType": "CustomField",
+            "serverRevisionCounter": 22,
+            "lastRetrievedFromServer": null,
+            "isNameObsolete": false
+        },
+        "ApexClass__TestUpdateAccountCA": {
+            "memberType": "ApexClass",
+            "serverRevisionCounter": 36,
+            "lastRetrievedFromServer": 36,
+            "isNameObsolete": false
+        },
+        "Profile__B2B Reordering Portal Buyer Profile": {
+            "memberType": "Profile",
+            "serverRevisionCounter": 59,
+            "lastRetrievedFromServer": null,
+            "isNameObsolete": false
+        },
+        "Layout__Account-Account Layout": {
+            "memberType": "Layout",
+            "serverRevisionCounter": 61,
+            "lastRetrievedFromServer": null,
+            "isNameObsolete": false
+        },
+        "StandardValueSet__OrderStatus": {
+            "memberType": "StandardValueSet",
+            "serverRevisionCounter": 80,
+            "lastRetrievedFromServer": null,
+            "isNameObsolete": false
+        },
+        "ApexClass__ScriptCreate100Orders": {
+            "memberType": "ApexClass",
+            "serverRevisionCounter": 119,
+            "lastRetrievedFromServer": 119,
+            "isNameObsolete": false
+        }
+    }
+}

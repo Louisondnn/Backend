@@ -1,27 +1,39 @@
-@isTest
-private class testUpdateAccountCA {
-    @isTest static void test() {
-        Account acc1 = new Account(Name = 'Test Account 1');
-        insert acc1;
+@IsTest
+public class TestUpdateAccountCA {
 
-        Product2 pd1 = new Product2(Name = 'Chemise Verte longue XYX', Family = 'Chemise');
-        Insert pd1;
- 
-        //Create the PricebookEntry
-        PricebookEntry pbe = new PricebookEntry(
-            Pricebook2Id = Test.getStandardPricebookId(),
-            Product2Id = pd1.Id,
-            UnitPrice = 1020,
-            IsActive = true
-        );
-        Insert pbe;
+    @IsTest
+    static void testUpdateAccountCA() {
+        // Création d'un compte test
+        Account acc = new Account(Name='Test Account', Chiffre_d_affaire__c=0);
+        insert acc;
 
-        Order o1 = new Order(AccountId = acc1.Id);
-        insert o1;
+        //  Création de 5 commandes avec un champ personnalisé Montant__c
+        List<Order> orders = new List<Order>();
+        for (Integer i=0; i<5; i++) {
+            orders.add(new Order(
+                AccountId = acc.Id,
+                Status = 'Ordered',
+                Montant__c = 100 + i*10 // <-- Champ personnalisé à créer
+            ));
+        }
+        insert orders;
 
-        OrderItem oi1 = new OrderItem (OrderId = o1.Id, PricebookEntryId = pbe.Id, Quantity=10, UnitPrice = 150);
-        insert oi1;
-        OrderItem oi2 = new OrderItem (OrderId = o1.Id, PricebookEntryId = pbe.Id, Quantity=20, UnitPrice = 1000);
-        insert oi2;        
+        // Vérification du trigger
+        acc = [SELECT Chiffre_d_affaire__c FROM Account WHERE Id=:acc.Id];
+        System.assertEquals(550, acc.Chiffre_d_affaire__c,
+            'Le chiffre d\'affaires doit être la somme des Montant__c');
+
+        // 4️ Test batch
+        Test.startTest();
+        Database.executeBatch(new UpdateAccounts(), 2);
+        Test.stopTest();
+
+        acc = [SELECT Chiffre_d_affaire__c FROM Account WHERE Id=:acc.Id];
+        Integer nbOrders = [SELECT COUNT() FROM Order WHERE AccountId = :acc.Id];
+        System.debug('Nombre de commandes créées = ' + nbOrders);
+        System.assertEquals(5, nbOrders); // ou 100 si tu en crées 100
+
+        System.assertEquals(550, acc.Chiffre_d_affaire__c,
+            'Le batch doit recalculer correctement le chiffre d\'affaires');
     }
 }
