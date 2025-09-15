@@ -1,5 +1,5 @@
 @IsTest
-public class TestTriggerBug {
+public class TriggerBugTest {
 
     @IsTest
     static void testBulkOrders() {

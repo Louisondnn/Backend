@@ -7,7 +7,8 @@
 //  My team orders
 // somme des commande a afficher sur accounts via page 
 // faire captures script + tests pour la soutenance 
-// nettoyage 
+// nettoyage, faire un rapport pour sommes commandes 
+// chiffres sommes et graphique 
 public with sharing class ThAccount {
     public static void run(List<Order> newOrders,
                            Boolean isBefore,
