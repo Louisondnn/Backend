@@ -1,0 +1,5 @@
+{
+    "salesforcedx-vscode-core.show-cli-success-msg": false,
+    "workbench.editor.preventPinnedEditorClose": "keyboardAndMouse",
+    "keyboard.touchbar.enabled": true
+}

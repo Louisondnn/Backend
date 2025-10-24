@@ -1,0 +1,276 @@
+{
+    "fileVersion": 0,
+    "serverMaxRevisionCounter": 763,
+    "sourceMembers": {
+        "CustomField__Account.Montant__c": {
+            "memberType": "CustomField",
+            "serverRevisionCounter": 21,
+            "lastRetrievedFromServer": null,
+            "isNameObsolete": true
+        },
+        "CustomField__Account.Chiffre_d_affaire__c": {
+            "memberType": "CustomField",
+            "serverRevisionCounter": 633,
+            "lastRetrievedFromServer": 633,
+            "isNameObsolete": false
+        },
+        "Layout__Account-Account (Marketing) Layout": {
+            "memberType": "Layout",
+            "serverRevisionCounter": 25,
+            "lastRetrievedFromServer": null,
+            "isNameObsolete": false
+        },
+        "Layout__Account-Account (Sales) Layout": {
+            "memberType": "Layout",
+            "serverRevisionCounter": 723,
+            "lastRetrievedFromServer": null,
+            "isNameObsolete": false
+        },
+        "Layout__Account-Account (Support) Layout": {
+            "memberType": "Layout",
+            "serverRevisionCounter": 26,
+            "lastRetrievedFromServer": null,
+            "isNameObsolete": false
+        },
+        "Layout__Account-Account Layout": {
+            "memberType": "Layout",
+            "serverRevisionCounter": 724,
+            "lastRetrievedFromServer": null,
+            "isNameObsolete": false
+        },
+        "Profile__B2B Reordering Portal Buyer Profile": {
+            "memberType": "Profile",
+            "serverRevisionCounter": 637,
+            "lastRetrievedFromServer": null,
+            "isNameObsolete": false
+        },
+        "Profile__Admin": {
+            "memberType": "Profile",
+            "serverRevisionCounter": 759,
+            "lastRetrievedFromServer": null,
+            "isNameObsolete": false
+        },
+        "CustomField__Order.Montant__c": {
+            "memberType": "CustomField",
+            "serverRevisionCounter": 17,
+            "lastRetrievedFromServer": null,
+            "isNameObsolete": false
+        },
+        "Layout__Order-Order Layout": {
+            "memberType": "Layout",
+            "serverRevisionCounter": 737,
+            "lastRetrievedFromServer": null,
+            "isNameObsolete": false
+        },
+        "CustomField__User.Team__c": {
+            "memberType": "CustomField",
+            "serverRevisionCounter": 602,
+            "lastRetrievedFromServer": null,
+            "isNameObsolete": false
+        },
+        "Layout__CommunityMemberLayout-Community Member Layout": {
+            "memberType": "Layout",
+            "serverRevisionCounter": 30,
+            "lastRetrievedFromServer": null,
+            "isNameObsolete": false
+        },
+        "Layout__User-User Layout": {
+            "memberType": "Layout",
+            "serverRevisionCounter": 31,
+            "lastRetrievedFromServer": null,
+            "isNameObsolete": false
+        },
+        "ApexClass__MyTeamOrdersController": {
+            "memberType": "ApexClass",
+            "serverRevisionCounter": 760,
+            "lastRetrievedFromServer": 760,
+            "isNameObsolete": false
+        },
+        "ApexPage__MyTeamOrders": {
+            "memberType": "ApexPage",
+            "serverRevisionCounter": 729,
+            "lastRetrievedFromServer": 628,
+            "isNameObsolete": false
+        },
+        "FlexiPage__Account_Record_Page": {
+            "memberType": "FlexiPage",
+            "serverRevisionCounter": 480,
+            "lastRetrievedFromServer": null,
+            "isNameObsolete": false
+        },
+        "CustomObject__Account": {
+            "memberType": "CustomObject",
+            "serverRevisionCounter": 536,
+            "lastRetrievedFromServer": 536,
+            "isNameObsolete": false
+        },
+        "StandardValueSet__OrderStatus": {
+            "memberType": "StandardValueSet",
+            "serverRevisionCounter": 286,
+            "lastRetrievedFromServer": null,
+            "isNameObsolete": false
+        },
+        "FlexiPage__Account_Record_Page1": {
+            "memberType": "FlexiPage",
+            "serverRevisionCounter": 600,
+            "lastRetrievedFromServer": null,
+            "isNameObsolete": false
+        },
+        "Role__Jean_Test": {
+            "memberType": "Role",
+            "serverRevisionCounter": 629,
+            "lastRetrievedFromServer": null,
+            "isNameObsolete": false
+        },
+        "ApexClass__ScriptCreate100Orders": {
+            "memberType": "ApexClass",
+            "serverRevisionCounter": 632,
+            "lastRetrievedFromServer": 632,
+            "isNameObsolete": false
+        },
+        "Layout__Team__c-Team Layout": {
+            "memberType": "Layout",
+            "serverRevisionCounter": 636,
+            "lastRetrievedFromServer": null,
+            "isNameObsolete": false
+        },
+        "CustomObject__Team__c": {
+            "memberType": "CustomObject",
+            "serverRevisionCounter": 736,
+            "lastRetrievedFromServer": null,
+            "isNameObsolete": false
+        },
+        "CustomField__Order.NetAmount__c": {
+            "memberType": "CustomField",
+            "serverRevisionCounter": 703,
+            "lastRetrievedFromServer": null,
+            "isNameObsolete": false
+        },
+        "CustomField__Order.ShipmentCost__c": {
+            "memberType": "CustomField",
+            "serverRevisionCounter": 704,
+            "lastRetrievedFromServer": null,
+            "isNameObsolete": false
+        },
+        "ApexClass__TestUpdateAccountCA": {
+            "memberType": "ApexClass",
+            "serverRevisionCounter": 749,
+            "lastRetrievedFromServer": 749,
+            "isNameObsolete": false
+        },
+        "ApexClass__ThAccount": {
+            "memberType": "ApexClass",
+            "serverRevisionCounter": 761,
+            "lastRetrievedFromServer": 761,
+            "isNameObsolete": false
+        },
+        "ApexClass__ThOrder": {
+            "memberType": "ApexClass",
+            "serverRevisionCounter": 755,
+            "lastRetrievedFromServer": 755,
+            "isNameObsolete": false
+        },
+        "ApexClass__UpdateAccountCAUtils": {
+            "memberType": "ApexClass",
+            "serverRevisionCounter": 762,
+            "lastRetrievedFromServer": 762,
+            "isNameObsolete": false
+        },
+        "ApexClass__UpdateAccounts": {
+            "memberType": "ApexClass",
+            "serverRevisionCounter": 763,
+            "lastRetrievedFromServer": 763,
+            "isNameObsolete": false
+        },
+        "ApexClass__UpdateAllAccounts": {
+            "memberType": "ApexClass",
+            "serverRevisionCounter": 711,
+            "lastRetrievedFromServer": null,
+            "isNameObsolete": false
+        },
+        "ApexTrigger__CalculMontant": {
+            "memberType": "ApexTrigger",
+            "serverRevisionCounter": 712,
+            "lastRetrievedFromServer": null,
+            "isNameObsolete": false
+        },
+        "ApexTrigger__UpdateAccountCA": {
+            "memberType": "ApexTrigger",
+            "serverRevisionCounter": 713,
+            "lastRetrievedFromServer": null,
+            "isNameObsolete": false
+        },
+        "StaticResource__teamsOrdersChart": {
+            "memberType": "StaticResource",
+            "serverRevisionCounter": 714,
+            "lastRetrievedFromServer": null,
+            "isNameObsolete": false
+        },
+        "StandardValueSet__ContractStatus": {
+            "memberType": "StandardValueSet",
+            "serverRevisionCounter": 720,
+            "lastRetrievedFromServer": null,
+            "isNameObsolete": false
+        },
+        "CustomField__Contract.Status": {
+            "memberType": "CustomField",
+            "serverRevisionCounter": 719,
+            "lastRetrievedFromServer": null,
+            "isNameObsolete": false
+        },
+        "Role__Commercial_SUD": {
+            "memberType": "Role",
+            "serverRevisionCounter": 746,
+            "lastRetrievedFromServer": null,
+            "isNameObsolete": true
+        },
+        "ProfilePasswordPolicy__PT2_profilePasswordPolicy1759485646910": {
+            "memberType": "ProfilePasswordPolicy",
+            "serverRevisionCounter": 721,
+            "lastRetrievedFromServer": null,
+            "isNameObsolete": false
+        },
+        "ProfileSessionSetting__PT2_profileSessionSetting1759485647087": {
+            "memberType": "ProfileSessionSetting",
+            "serverRevisionCounter": 722,
+            "lastRetrievedFromServer": null,
+            "isNameObsolete": false
+        },
+        "Role__Directeur_Commercial": {
+            "memberType": "Role",
+            "serverRevisionCounter": 730,
+            "lastRetrievedFromServer": null,
+            "isNameObsolete": false
+        },
+        "Role__COO": {
+            "memberType": "Role",
+            "serverRevisionCounter": 738,
+            "lastRetrievedFromServer": null,
+            "isNameObsolete": false
+        },
+        "Role__Commercial_Nord": {
+            "memberType": "Role",
+            "serverRevisionCounter": 745,
+            "lastRetrievedFromServer": null,
+            "isNameObsolete": false
+        },
+        "Profile__Jean Jean": {
+            "memberType": "Profile",
+            "serverRevisionCounter": 744,
+            "lastRetrievedFromServer": null,
+            "isNameObsolete": false
+        },
+        "ProfilePasswordPolicy__Jean_Jean_profilePasswordPolicy1760100050723": {
+            "memberType": "ProfilePasswordPolicy",
+            "serverRevisionCounter": 742,
+            "lastRetrievedFromServer": null,
+            "isNameObsolete": false
+        },
+        "ProfileSessionSetting__null_profileSessionSetting1760100050779": {
+            "memberType": "ProfileSessionSetting",
+            "serverRevisionCounter": 743,
+            "lastRetrievedFromServer": null,
+            "isNameObsolete": false
+        }
+    }
+}

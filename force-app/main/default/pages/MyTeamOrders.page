@@ -1,8 +1,7 @@
 <apex:page controller="MyTeamOrdersController">
     <apex:form>
-        <h1>
-            Somme des commandes de mon équipe : 
+        <h2>Somme totale de l'équipe :
             <apex:outputText value="{!sumOrders}" />
-        </h1>
+        </h2>
     </apex:form>
 </apex:page>
